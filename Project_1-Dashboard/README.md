@@ -29,20 +29,16 @@ The dataset used for this project was obtained from a Youtube video(Excel for Da
 
 <img width="408" height="335" alt="job-bar" src="https://github.com/user-attachments/assets/425d4bb1-2a3c-4b63-b68f-1129700e7413" />
 
-
-- 🛠️ **Excel Features:** Utilized bar chart feature (with formatted salary values) and optimized layout for clarity.
-- 🎨 **Design Choice:** Horizontal bar chart for visual comparison of median salaries.
-- 📉 **Data Organization:** Sorted job titles by descending salary for improved readability.
-- 💡 **Insights Gained:** This enables quick identification of salary trends, noting that Senior roles and Engineers are higher-paying than Analyst roles.
+- Bar chart is used for clear comparison of the median salaries.
+- Job titles are arranged from highest to lowest salary.
+- 💡 **Insights Gained:** This helps users spot salary trends and understand which roles generally pay more.
 
 #### 🗺️ Country Median Salaries - Map Chart
 
-![1_Salary_Dashboard_Chart2.png](/0_Resources/Images/1_Salary_Dashboard_Country_Map.gif)
+<img width="348" height="466" alt="map" src="https://github.com/user-attachments/assets/41c12bfb-67cb-4b02-91db-c941d31ea920" />
 
-- 🛠️ **Excel Features:** Utilized Excel's map chart feature to plot median salaries globally.
-- 🎨 **Design Choice:** Color-coded map to visually differentiate salary levels across regions.
-- 📊 **Data Representation:** Plotted median salary for each country with available data.
-- 👁️ **Visual Enhancement:** Improved readability and immediate understanding of geographic salary trends.
+- Median salaries are plotted worldwide using a map chart.
+- The color intensity represents salary levels across regions. Darker shades indicate higher salaries.
 - 💡 **Insights Gained:** Enables quick grasp of global salary disparities and highlights high/low salary regions.
 
 ### 🧮 Formulas and Functions
