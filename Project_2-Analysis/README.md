@@ -2,89 +2,54 @@
 # Project 2 Analysis
 
 ## Introduction
-
-As a former job seeker, I’ve always been surprised by the lack of data exploring the most optimal jobs and skills in the data science market. I set out to understand what skills top employers request and how to land more pay.
+This file is consists of multiple analyses that provide insights into the relationship between skills and salaries in the data science job market. It helps users identify the essential skills based on their job and their location.
 
 ### Questions to Analyze
+1. What are the top skills for data professionals?
+2. Do more skills equal higher pay?
+3. What is the median salary for data science jobs across regions?
+4. What’s the pay for the top 10 skills?
 
-To understand the data science job market, I asked the following:
-
-1. **Do more skills get you better pay?**
-2. **What’s the salary for data jobs in different regions?**
-3. **What are the top skills of data professionals?**
-4. **What’s the pay for the top 10 skills?**
 
 ### Excel Skills Used
 
-The following Excel skills were utilized for analysis:
-
-- **📊 Pivot Tables**
-- **📈 Pivot Charts**
-- **🧮 DAX (Data Analysis Expressions)**
-- **🔍 Power Query**
-- **💪 Power Pivot**
+- Pivot Tables
+- Pivot Charts
+- DAX (Data Analysis Expressions)
+- Power Query
+- Power Pivot
 
 ### Data Jobs Dataset
 
-The dataset used for this project contains real-world data science job information from 2023. The dataset is available via my Excel course, which provides a foundation for analyzing data using Excel. 
+The dataset used for this project was obtained from a Youtube video(Excel for Data Analytics - Full Course for Beginners by Luke Barousse), which contains real-world data science job information from 2023.
 
-It includes detailed information on:
 
-- **👨‍💼 Job titles**
-- **💰 Salaries**
-- **📍 Locations**
-- **🛠️ Skills**
+## Do more skills get you better pay?
 
-## 1️⃣ Do more skills get you better pay?
+### Skill: Power Query (ETL)
 
-### 🔍 Skill: Power Query (ETL)
+-  I extracted data from data_salary_all.xlsx in Power Query and generated two queries:
+    - Data jobs information
+    - Skills for each job ID
 
-#### 📥 Extract
+#### Transform
 
-- I first used Power Query to extract the original data (`data_salary_all.xlsx`) and create two queries:
-    - 🗃️ First one with all the data jobs information.
-    - 🔧 The second listing the skills for each job ID.
+- Then, I transformed each query by modifying the column types, removing irrelevant columns, standardizing text by removing specific words, and trimming extra whitespace.
+- The transformed workbook were loaded into the workbook to create the analyses.
 
-#### 🔄 Transform
 
-- Then, I transformed each query by changing column types, removing unnecessary columns, cleaning text to eliminate specific words, and trimming excess whitespace.
-    - 📊 data_jobs_all
+### Analysis
 
-        ![2_Project_Analysis_Screenshot1.png](/0_Resources/Images/2_Project_Analysis_Screenshot1.png)
+#### Insights
 
-    - 🛠️ data_job_skills
-
-        ![2_Project_Analysis_Screenshot2.png](/0_Resources/Images/2_Project_Analysis_Screenshot2.png)
-
-#### 🔗 Load
-
-- Finally, I loaded both transformed queries into the workbook, setting the foundation for my subsequent analysis.
-    - 📊 data_jobs_all
-
-        ![2_Project_Analysis_Screenshot3.png](/0_Resources/Images/2_Project_Analysis_Screenshot3.png)
-
-    - 🛠️ data_job_skills
-
-        ![2_Project_Analysis_Screenshot4.png](/0_Resources/Images/2_Project_Analysis_Screenshot4.png)
-
-### 📊 Analysis
-
-#### 💡 Insights
-
-- 📈 There is a positive correlation between the number of skills requested in job postings and the median salary, particularly in roles like Senior Data Engineer and Data Scientist.
-- 💼 Roles that require fewer skills, like Business Analyst, tend to offer lower salaries, suggesting that more specialized skill sets command higher market value.
-
-    ![2_Project_Analysis_Chart1.png](/0_Resources/Images/2_Project_Analysis_Chart1.png)
-
-#### 🤔 So What
-
-- This trend emphasizes the value of acquiring multiple relevant skills, particularly for individuals aiming for higher-paying roles.
+- Jobs that require fewer skills, such as Business Analyst roles, tend to offer lower salaries compared to Senior Data Engineer positions that demands a broader skill set.
+- There is a clear distinction between Data Engineers and Data Scientists in terms of their job skills requirements. Data Engineers require more skills than Data Scientists, yet their salaries remain comparable. In some countries, Data Scientists even surpass the median salary of Data Engineers.
 
 ## 2️⃣ What’s the salary for data jobs in different regions?
 
-### 🧮 Skills: PivotTables & DAX
+### Skills: PivotTables & DAX
 
-#### 📈Pivot Table
+#### Pivot Table
 
 - 🔢 I created a PivotTable using the Data Model I created with Power Pivot.
 - 📊 I moved the `job_title_short` to the rows area and `salary_year_avg` into the values area.
